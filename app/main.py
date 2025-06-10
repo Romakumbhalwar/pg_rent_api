@@ -6,7 +6,7 @@ from app.schemas import PGInput
 
 app = FastAPI()
 
-model = joblib.load("app/pg_rent_model_full.pkl")
+model = joblib.load("app/model/pg_rent_model_full.pkl")
 
 @app.get("/")
 def root():
