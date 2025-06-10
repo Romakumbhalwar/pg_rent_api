@@ -11,7 +11,7 @@ with st.form("predict_form"):
     location = st.text_input("Location")
     zone = st.text_input("Zone")
     shearing = st.selectbox("Shearing", ["Single", "Double", "Tripal", "Four"])
-    best_suit_for = st.text_input("students","working professionals","students and working professionals")
+    best_suit_for = st.text_input(best suit for["students","working professionals","students and working professionals"])
     meals_avilable = st.selectbox("Meals Available", ["Yes", "No"])
     notic_period = st.text_input("Notice Period")
     lock_in_period = st.text_input("Lock-in Period")
