@@ -11,7 +11,7 @@ with st.form("predict_form"):
     location = st.text_input("Location")
     zone = st.text_input("Zone")
     shearing = st.selectbox("Shearing", ["Single", "Double", "Tripal", "Four"])
-    best_suit_for = st.text_input("Best Suit For")
+    best_suit_for = st.text_input("students","working professionals","students and working professionals")
     meals_avilable = st.selectbox("Meals Available", ["Yes", "No"])
     notic_period = st.text_input("Notice Period")
     lock_in_period = st.text_input("Lock-in Period")
@@ -51,7 +51,7 @@ if submit:
     }
 
     # Replace with actual FastAPI backend URL after deployment
-    api_url = "https://your-fastapi-api.onrender.com/predict"
+    api_url = "https://pg-rent-api.onrender.com"
 
     try:
         response = requests.post(api_url, json=data)
