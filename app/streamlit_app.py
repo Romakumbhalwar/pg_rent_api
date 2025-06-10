@@ -56,7 +56,8 @@ if submit:
     }
 
     # Replace with actual FastAPI backend URL after deployment
-    api_url = "https://pg-rent-api.onrender.com"
+    api_url = "https://pg-rent-api.onrender.com/predict"
+
 
     try:
         response = requests.post(api_url, json=data)
