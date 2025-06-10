@@ -9,7 +9,7 @@ with st.form("predict_form"):
     city = st.text_input("City")
     area = st.text_input("Area")
     location = st.text_input("Location")
-    zone = st.text_input("Zone")
+    zone = st.text_input("Zone"["east","west","north","south","central"])
     shearing = st.selectbox("Shearing", ["Single", "Double", "Tripal", "Four"])
     best_suit_for = st.selectbox(
     "Best suited for",
