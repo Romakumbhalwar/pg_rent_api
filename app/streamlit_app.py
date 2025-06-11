@@ -48,7 +48,7 @@ with st.form("rent_form"):
 
         try:
             # 🔁 Replace with your deployed FastAPI URL
-            response = requests.post("https://your-fastapi-url.onrender.com/predict", json=payload)
+            response = requests.post("https://pg-rent-api.onrender.com/predict", json=payload)
             if response.status_code == 200:
                 result = response.json()
                 st.success(f"✅ Predicted Rent: ₹{result['predicted_rent']}")
