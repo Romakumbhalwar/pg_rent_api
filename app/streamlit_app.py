@@ -10,7 +10,7 @@ with st.form("rent_form"):
     location = st.text_input("Location", "manewada, nagpur")
     zone = st.selectbox("Zone", ["north", "south", "east", "west", "central"])
     shearing = st.selectbox("Shearing", ["private", "double", "triple", "shared"])
-    best_suit_for = st.selectbox("Best Suited For", ["students", "working", "family"])
+    best_suit_for = st.selectbox("Best Suited For", ["students", "working", "students and working"])
     meals_avilable = st.selectbox("Meals Available", ["yes", "no"])
     notic_period = st.text_input("Notice Period", "15 days")
     lock_in_period = st.text_input("Lock-in Period", "30 days")
