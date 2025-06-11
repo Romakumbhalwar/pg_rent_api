@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 
-class PGInput(BaseModel):
-    listing_title: str
+class PGRentRequest(BaseModel):
     city: str
     area: str
     location: str
@@ -19,4 +18,3 @@ class PGInput(BaseModel):
     gurdian_allowed: str
     drinking_allowed: str
     smoking_allowed: str
-    security_deposite: float
